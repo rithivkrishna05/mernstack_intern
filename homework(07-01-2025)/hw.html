@@ -1,0 +1,126 @@
+<html>
+<head>
+    <title>F1</title>
+    <style>
+        body {
+            background-image: url("https://media.wired.com/photos/59548a648e8cc150fa8ec36b/master/w_2560%2Cc_limit/f1hun2015_jk1760187.jpg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-image: url("https://i.pinimg.com/originals/b6/b7/c4/b6b7c4d143a708eb4bbc9f589015fe05.png");
+        background-size: 65% 200px; /* Ensures the image stretches horizontally and vertically */
+        background-repeat: no-repeat; /* Avoids tiling of the image */
+        background-position: center; /* Centers the image vertically */
+        height: 710px; /* Sets the desired height of the header */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        font-size: 36px;
+        font-weight: bold;
+        }
+        .books-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .book-category {
+            flex: 1;
+            background: rgba(150, 145, 152, 0.8);
+            border-radius: 18px;
+            padding: 20px;
+        }
+        .book-category h2 {
+            text-align: center;
+            color: white;
+            background: #333;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0 0 20px;
+        }
+        .book-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .book-card {
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.5s, box-shadow 0.7s;
+        }
+        .book-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+        }
+        .book-card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .books-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <section class="books-container">
+        <div class="book-category">
+            <h2>F1 Drivers</h2>
+            <div class="book-list">
+                <div class="book-card">
+                    <img src="https://firstsportz.com/wp-content/uploads/2023/01/IMG_COM_20230120_0146_33_4832.jpg" alt="Lewis Hamilton">
+                    <p>Lewis Hamilton</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://d3cm515ijfiu6w.cloudfront.net/wp-content/uploads/2023/07/03152121/red-bull-max-verstappen-podium-austrian-grand-prix-planet-f1.jpg" alt="Max Verstappen">
+                    <p>Max Verstappen</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://sonkonews.com/wp-content/uploads/2020/05/Sebastian-Vettel.jpg" alt="sebastian vettel">
+                    <p>sebastian vettel</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://www.carscoops.com/wp-content/uploads/2021/08/Michael-Schumacher-Monaco-2001-1024x555.jpg" alt="Michael Schumacher">
+                    <p>Michael Schumacher</p>
+                </div>
+            </div>
+        </div>
+        <div class="book-category">
+            <h2>Respective Cars</h2>
+            <div class="book-list">
+                <div class="book-card">
+                    <img src="https://wallpaperaccess.com/full/4070182.jpg" alt="Mercedes">
+                    <p>Mercedes</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/10/27/748283-max-verstappen-reuters.jpg" alt="Red Bull">
+                    <p>Red Bull</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://th.bing.com/th/id/OIP.2A9tXCrHPL2LXpQeKoKnBAHaE8?rs=1&pid=ImgDetMain" alt="Ferrari">
+                    <p>Ferrari</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://i.inews.co.uk/content/uploads/2020/12/PRI_174625944.jpg" alt="Vodafone">
+                    <p>Vodafone</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
